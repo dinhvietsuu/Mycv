@@ -621,6 +621,8 @@
                 @media (min-width: 320px) and (max-width: 479px) {
                     background-color:white;
                     text-align:center;
+                    flex-direction:column;
+                    @include flex-box ;
                     
                 }
                 p{
@@ -667,13 +669,14 @@
                         text-align: center;
                     }
                     @media (min-width: 320px) and (max-width: 479px) {
-                        max-width:fit-content;
-                        //background-color:red;
-                        display: flex;
-                        flex-direction:column;
-                        height:12rem;
+                        
+                        max-width:100%;
+                       // background-color:red;
                         text-align: center;
-                        margin-left: 7rem;
+                       margin-left: auto;
+                       margin-right: auto; 
+                       margin-bottom: 8rem;;
+                        
                     
                     }
                     a{
@@ -687,7 +690,9 @@
                         box-shadow: $box-shadow;
                         color: $color-key3;
                         @media (min-width: 320px) and (max-width: 479px) {
-                            
+                           width: 100%;
+                           display: block;
+                           margin-left: .4rem;
                         }
                         &:nth-child(1){
                             @media (min-width: 600px) and (max-width: 767px){
@@ -704,9 +709,16 @@
                                 margin-top:2rem;
                                 order:2;
                                 
+                                
                             }
-                            
                         }
+                        &:nth-child(2){
+                            @media (min-width: 320px) and (max-width: 479px) {
+                                   
+                                    display:none;
+                                    
+                                }
+                            }       
                         @media (min-width: 768px) and (max-width: 1024px) {
                             font-size: 2rem;
                             padding:1rem 2rem;

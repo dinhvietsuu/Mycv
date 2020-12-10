@@ -1151,6 +1151,19 @@ img {
   .about .container .row .about-text {
     background-color: white;
     text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1211,19 +1224,11 @@ img {
 
 @media (min-width: 320px) and (max-width: 479px) {
   .about .container .row .about-text div {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 12rem;
+    max-width: 100%;
     text-align: center;
-    margin-left: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
   }
 }
 
@@ -1238,6 +1243,14 @@ img {
   -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #f7a2a2;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .about .container .row .about-text div a {
+    width: 100%;
+    display: block;
+    margin-left: .4rem;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
@@ -1264,6 +1277,12 @@ img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .about .container .row .about-text div a:nth-child(2) {
+    display: none;
   }
 }
 
