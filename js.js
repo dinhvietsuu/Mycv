@@ -148,12 +148,12 @@ const rain = document.querySelector('.rain');
 changeColor.addEventListener('click',function(e){
     console.log(e.target.src);
     if(e.target.src=='http://192.168.1.22:5500/img/moon-regular.svg'){
-        changeColor.src = '/img/cloud-sun-solid.svg';
+        changeColor.src = 'img/cloud-sun-solid.svg';
         body.style.backgroundColor = 'black';
         rain.style.display = 'block';
 
     }else {
-        changeColor.src ='/img/moon-regular.svg';
+        changeColor.src ='img/moon-regular.svg';
         body.style.backgroundColor = 'white';
         rain.style.display = 'none';
         
