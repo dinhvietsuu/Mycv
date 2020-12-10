@@ -2785,6 +2785,60 @@ img {
   display: flex;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imgTarget .container .row .box .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    right: 2rem;
+    top: -1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .imgTarget .container .row .box .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    right: 2rem;
+    top: -1rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .imgTarget .container .row .box .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    right: 2rem;
+    top: -1rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   .imgTarget .container .row .box .close {
     display: -webkit-box;
@@ -2796,6 +2850,10 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    right: 2rem;
+    top: -1rem;
   }
 }
 
@@ -2803,6 +2861,30 @@ img {
   font-size: 2.5rem;
   margin: -.3rem auto;
   color: #f7a2a2;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imgTarget .container .row .box .close span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .imgTarget .container .row .box .close span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .imgTarget .container .row .box .close span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .imgTarget .container .row .box .close span {
+    font-size: 4rem;
+  }
 }
 
 .imgTarget .container .row .box .img {

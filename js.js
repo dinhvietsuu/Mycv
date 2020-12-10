@@ -145,17 +145,19 @@ menu.querySelector('.menu__close').addEventListener('click', function(){
 const body = document.body;
 const changeColor = document.querySelector('.darkMode img');
 const rain = document.querySelector('.rain');
+const audio = document.getElementById("audio__play");
 changeColor.addEventListener('click',function(e){
     console.log(e.target.src);
     if(e.target.src=='http://192.168.1.22:5500/img/moon-regular.svg'||e.target.src=="https://dinhvietsuu.github.io/Mycv/img/moon-regular.svg"){
         changeColor.src = 'img/cloud-sun-solid.svg';
         body.style.backgroundColor = 'black';
         rain.style.display = 'block';
-
+        audio.play();
     }else {
         changeColor.src ='img/moon-regular.svg';
         body.style.backgroundColor = 'white';
         rain.style.display = 'none';
+        audio.pause();
         
     }
     
