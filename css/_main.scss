@@ -21,6 +21,9 @@
         top: 1.5rem;
         right: 1.5rem;
         cursor: pointer;
+        @media (min-width: 320px) and (max-width: 479px) {
+            @include flex-box ;
+        }
         &:hover{
             transform:scale(.95);
             transition: transform .5s ease;
@@ -1693,7 +1696,9 @@
                     top:0rem;
                     right:4rem;
                     display:flex;
-
+                    @media (min-width: 320px) and (max-width: 479px) {
+                        @include flex-box ;
+                    }
                     span{
                         font-size:2.5rem;
                         margin:-.3rem auto;

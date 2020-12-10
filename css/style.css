@@ -290,6 +290,20 @@ img {
   cursor: pointer;
 }
 
+@media (min-width: 320px) and (max-width: 479px) {
+  .menu__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .menu__close:hover {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
@@ -2769,6 +2783,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .imgTarget .container .row .box .close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .imgTarget .container .row .box .close span {
