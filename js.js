@@ -147,7 +147,7 @@ const changeColor = document.querySelector('.darkMode img');
 const rain = document.querySelector('.rain');
 changeColor.addEventListener('click',function(e){
     console.log(e.target.src);
-    if(e.target.src=='http://192.168.1.22:5500/img/moon-regular.svg'){
+    if(e.target.src=='http://192.168.1.22:5500/img/moon-regular.svg'||e.target.src=="https://dinhvietsuu.github.io/Mycv/img/moon-regular.svg"){
         changeColor.src = 'img/cloud-sun-solid.svg';
         body.style.backgroundColor = 'black';
         rain.style.display = 'block';
