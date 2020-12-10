@@ -1,0 +1,196 @@
+@keyframes showMenu {
+    from{
+        transform:translateX(-300rem);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0rem);
+        opacity: 1;
+    }
+}
+
+@keyframes outMenu {
+    from{
+        transform:translateX(0rem);
+        opacity: 1;
+       
+    }
+    to{
+        transform:translateX(-300rem);
+        opacity: 0;
+    }
+}
+
+@keyframes backTop{
+    from{
+        transform:scale(.9)
+    }
+    to{
+        transform:scale(1.1)
+    }
+}
+
+@keyframes effect1{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+@keyframes effect2{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(1rem);
+    }
+}
+@keyframes effect3{
+    0%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(3rem);
+    }
+}
+
+@keyframes skill {
+    from{
+        opacity: .3;
+        transform:translateX(300rem);
+    }
+    to{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes skill1 {
+    from{
+        opacity: .2;
+        transform:translateX(-300rem);
+    }
+    to{
+        transform:translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes skill2 {
+    0%{
+        opacity: .4;
+        transform:translateX(300rem);
+    }
+    50%{
+        opacity:.5;
+        transform:translateX(20rem);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes project {
+   
+        from{
+            transform:translateX(-100rem);
+            opacity: .2;
+            }
+        to{
+           transform:translateX(0);
+            opacity: 1;
+        }
+        
+    
+}
+@keyframes project {
+   
+    from{
+        transform:translateX(-100rem);
+        opacity: .2;
+        }
+    to{
+       transform:translateX(0);
+        opacity: 1;
+    }
+    
+
+}
+@keyframes project1 {
+   
+    from{
+        transform:translateX(100rem);
+        opacity: .2;
+        }
+    to{
+       transform:translateX(0);
+        opacity: 1;
+    }
+    
+
+}
+@keyframes project2 {
+   
+    from{
+        transform:translateY(-100rem);
+        opacity: .2;
+        }
+    to{
+       transform:translateX(0);
+        opacity: 1;
+    }
+    
+
+}
+
+@keyframes textRun {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes textShow{
+    from {
+        transform:translateY(-4rem);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+@keyframes textShow1{
+    from {
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-4rem);
+    }
+}
+
+@keyframes darkMode {
+    0%{
+        transform:rotate(0);
+    }
+    50%{
+        transform:rotate(45deg);
+    }
+    
+}
+
+@keyframes rainMove {
+    0% {
+      top: -10rem;
+    }
+    50% {
+      top: 100vh;
+    }
+    100% {
+      top: 100vh;
+    }
+  }

@@ -1,0 +1,73 @@
+*, *::before , *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Poppin',sans-serif;
+    overflow-x: hidden;
+    transition: background-color 1.5s ease;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+// class 
+.container{
+    // @media (min-width: 1281px) {
+    //     max-width: 1100px;
+    // }
+    max-width: 1024px;
+    margin: auto;
+    @media (min-width: 768px) and (max-width: 1024px)  {
+        margin-right: 2rem;
+        max-width: 1024px;
+    }
+    @media (min-width: 600px) and (max-width: 767px) {
+        max-width:767px; 
+        margin-right: 2rem;
+    }
+    @media (min-width: 480px) and (max-width: 599px) {
+        max-width: 599px;
+        margin-right: 2rem;
+   
+    }
+    @media (min-width: 320px) and (max-width: 479px) {
+        max-width: 479px;
+    }
+}
+
+
+
+
+
+
+/***********Colors*********************/
+$color-key1:orange;
+$color-key2:gray;
+$color-key3:rgb(247, 162, 162);
+$box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$box-outer: .3rem .3rem .3rem #d0d0d0 , -.3rem -.3rem -.3rem #f8f8f8;
+$box-inset : inset .3rem .3rem .3rem #d0d0d0 , inset -.3rem -.3rem .3rem #f8f8f8;
+
+
+/*************Mixins*******************/
+@mixin flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//reponsive
