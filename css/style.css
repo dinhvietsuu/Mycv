@@ -420,7 +420,7 @@ img {
 .home-section .rain-drop {
   position: fixed;
   top: -10rem;
-  width: 1px;
+  width: .1rem;
   height: 10rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white));
   background-image: linear-gradient(to bottom, transparent, white);
@@ -550,13 +550,38 @@ img {
   opacity: 0;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  z-index: 1000;
+  z-index: 100000;
+}
+
+@media (min-width: 1281px) {
+  .home-section .backTop {
+    right: 1rem;
+    bottom: 2rem;
+    position: fixed;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .home-section .backTop {
     right: 1rem;
     bottom: 2rem;
+    position: fixed;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .home-section .backTop {
+    right: 1rem;
+    position: fixed;
+    bottom: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .home-section .backTop {
+    right: 1rem;
+    bottom: 2rem;
+    position: fixed;
   }
 }
 
@@ -859,6 +884,12 @@ img {
      object-fit: cover;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    margin-bottom: 5rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 479px) {
   .about {
     width: 100%;
@@ -949,12 +980,14 @@ img {
   .about .container .row {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    position: relative;
   }
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
   .about .container .row {
     margin-bottom: 18rem;
+    position: relative;
   }
 }
 
@@ -1052,11 +1085,26 @@ img {
   display: flex;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about .container .row .socials {
+    width: 22%;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 767px) {
   .about .container .row .socials {
     width: 40%;
     top: 26rem;
     left: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1146,6 +1194,7 @@ img {
   .about .container .row .about-text {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    height: auto;
   }
 }
 
@@ -1154,8 +1203,6 @@ img {
     font-size: 1.5rem;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
-    height: 50rem;
-    overflow: hidden;
     text-overflow: ellipsis;
   }
 }
@@ -1164,12 +1211,12 @@ img {
   .about .container .row .about-text {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    position: relative;
   }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
   .about .container .row .about-text {
-    background-color: white;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1206,37 +1253,52 @@ img {
 
 @media (min-width: 600px) and (max-width: 767px) {
   .about .container .row .about-text div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: 12rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
-    left: 2rem;
-    top: 35rem;
+    left: 0;
+    top: 38rem;
     z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: none;
   }
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
   .about .container .row .about-text div {
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 12rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 12rem;
+    display: none;
     position: absolute;
-    left: 2rem;
-    top: 27rem;
+    left: -25rem;
+    top: 28rem;
     z-index: 1000;
     text-align: center;
   }
@@ -1263,6 +1325,22 @@ img {
   -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: #f7a2a2;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .about .container .row .about-text div a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .about .container .row .about-text div a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
@@ -1321,7 +1399,7 @@ img {
 
 @media (min-width: 480px) and (max-width: 599px) {
   .about .container .row .about-text div a {
-    padding: .2rem .2em;
+    padding: 2rem 2em;
     font-size: 2rem;
   }
 }
@@ -1348,6 +1426,12 @@ img {
 
 @media (min-width: 320px) and (max-width: 479px) {
   .selections .container .items {
+    margin-top: 20rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .selections .container .items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1359,6 +1443,7 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 2rem;
+    margin-top: 4rem;
   }
 }
 
@@ -2441,7 +2526,7 @@ img {
 }
 
 .demo {
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -3305,7 +3390,6 @@ img {
 
 .contacts .container .row .box__contact span {
   font-size: 1.5rem;
-  text-transform: capitalize;
   font-style: italic;
   color: gray;
 }
