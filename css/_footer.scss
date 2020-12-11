@@ -1,0 +1,20 @@
+footer {
+    .container {
+        .row {
+            @include flex-box;
+            border-top: .1rem solid $color-key2;
+            height: 6rem;
+            span {
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 2rem;
+                line-height: 3rem;
+                color: $color-key2;
+                text-shadow: 3px 3px 0px rgba(150, 150, 150, 0.69);
+                @media (min-width: 320px) and (max-width: 479px) {
+                    font-size: 2.5rem
+                }
+            }
+        }
+    }
+}
