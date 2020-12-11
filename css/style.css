@@ -277,6 +277,12 @@ img {
   background-color: #f7a2a2;
 }
 
+@media (min-width: 600px) and (max-width: 767px) {
+  .menu {
+    height: 100%;
+  }
+}
+
 .menu__close {
   height: 4rem;
   width: 4rem;
@@ -2403,6 +2409,10 @@ img {
   transition: all 1s ease;
 }
 
+.demo {
+  margin-bottom: 5rem;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .demo {
     margin-left: 1.5rem;
@@ -2926,6 +2936,97 @@ img {
   opacity: 1;
   -webkit-transition: all  .5s ease;
   transition: all  .5s ease;
+}
+
+.review .container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review .container .row h3 {
+  color: #f7a2a2;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .review .container .row h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .review .container .row h3 {
+    font-size: 3rem;
+  }
+}
+
+.review .container .row h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  color: gray;
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .review .container .row h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .review .container .row h2 {
+    font-size: 4rem;
+  }
+}
+
+.review .container .row .item {
+  width: 100%;
+  background-color: #f7a2a2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.review .container .row .item .person {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review .container .row .item .person img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.review .container .row .item span {
+  color: gray;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 @-webkit-keyframes showMenu {
